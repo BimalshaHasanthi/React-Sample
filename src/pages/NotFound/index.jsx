@@ -1,8 +1,10 @@
 import { Component } from 'react';
 import GDSEButton from '../../components/common/Button';
 import not_found from '../../assets/404.jpg';
-import withStyles from "@mui/material/styles/withStyles";
-import Link from "@mui/material/Link";
+import { Link } from 'react-router-dom';
+import {withStyles} from "@mui/styles";
+
+
 
 const styleSheet = () => ({
     container: {
@@ -20,7 +22,7 @@ const styleSheet = () => ({
 })
 
 
-class NotFound extends Component {
+class Index extends Component {
     constructor(props) {
         super(props);
     }
@@ -42,4 +44,4 @@ class NotFound extends Component {
         )
     }
 }
-export default withStyles(styleSheet)(NotFound)
+export default withStyles(styleSheet)(Index)

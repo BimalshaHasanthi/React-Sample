@@ -1,4 +1,6 @@
-import { Component, Fragment } from "react";
+import React, { Component, Fragment } from "react";
+import Title from "../../components/home/Title";
+
 
 class HomePage extends Component {
     constructor(props) {
@@ -8,7 +10,7 @@ class HomePage extends Component {
     render() {
         return (
             <Fragment>
-
+                <Title name="React"/>
             </Fragment>
 
         )

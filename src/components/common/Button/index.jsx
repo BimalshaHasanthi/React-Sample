@@ -2,7 +2,7 @@ import React,{Component} from "react";
 import PropTypes from "prop-types";
 import Button from '@mui/material/Button';
 
-class GDSEButton extends Component {
+class ErrorButton extends Component {
     static propTypes = {
         onClick: PropTypes.func,
         children: PropTypes.node,
@@ -17,7 +17,7 @@ class GDSEButton extends Component {
         startIcon: PropTypes.string
     }
 
-    static defautlProps = {
+    static defaultProps = {
         className: "",
         color: "primary",
         label: "",
@@ -73,4 +73,4 @@ class GDSEButton extends Component {
     }
 }
 
-export default GDSEButton;
+export default ErrorButton;

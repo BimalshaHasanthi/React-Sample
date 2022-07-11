@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 
-class Dashboard extends Component {
+class Item extends Component {
     constructor(props) {
         super(props);
     }
@@ -17,11 +17,11 @@ class Dashboard extends Component {
             <div className={classes.container}>
                 <div className={classes.title__container}>
                     <Tabs  centered onChange={onchange}>
-                        <Tab label="Dashboard"  href="/Dashboard" style={{color:'#ffd100',top:'5px'}}/>
+                        <Tab label="Dashboard"  href="/dashboard" style={{color:'#ffd100',top:'5px'}}/>
 
-                        <Tab label="Customer"  href="/Customer" style={{color:'#ffd100',top:'5px'}}/>
+                        <Tab label="Customer"  href="/customer" style={{color:'#ffd100',top:'5px'}}/>
 
-                        <Tab label="Item" href="/Item" style={{color:'#ffd100',top:'5px'}}/>
+                        <Tab label="Item" href="/item" style={{color:'#ffd100',top:'5px'}}/>
                     </Tabs>
                 </div>
                 <div className={classes.form__container}>
@@ -34,5 +34,5 @@ class Dashboard extends Component {
         )
     }
 }
-export default withStyles(styleSheet)(Dashboard)
+export default withStyles(styleSheet)(Item)
 

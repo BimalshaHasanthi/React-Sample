@@ -29,7 +29,7 @@ class Customer extends Component {
                     </Tabs>
                 </div>
                 <div className={classes.form__container}>
-                    <Typography variant="h4" >
+                    <Typography variant="h4"  >
                         Customer Manage
                     </Typography>
 

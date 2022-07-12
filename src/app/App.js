@@ -10,9 +10,9 @@ import Item from "../pages/Item";
 function App() {
     return (
         <Routes>
-            <Route exact path='/' element={<HomePage/>}/>
-            <Route exact path='/' element={<HomePage/>}/>
-            <Route path='/home' element={<HomePage/>}/>
+            <Route exact path='/' element={<Dashboard/>}/>
+            <Route exact path='/' element={<Dashboard/>}/>
+            <Route path='/home' element={<Dashboard/>}/>
             <Route path='/404' element={<NotFoundPage/>}/>
             <Route path="*" element={<NotFoundPage/>}/>
             <Route path="/Dashboard" element={<Dashboard/>}/>

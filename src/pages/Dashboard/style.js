@@ -18,9 +18,10 @@ export const styleSheet = {
     form__container: {
         display: 'flex',
         flexDirection: 'row',
-        backgroundColor: '#333533',
+        backgroundColor: 'black',
         height: '85%',
         width: '100%',
+        justifyContent: 'center',
     },
     left__form: {
         height: '100%',

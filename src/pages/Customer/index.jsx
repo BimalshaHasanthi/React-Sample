@@ -5,6 +5,10 @@ import { styleSheet } from './style';
 import {Link} from "react-router-dom";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
+import ErrorButton from "../../components/common/Button";
+import TextField from "@mui/material/TextField";
+import Grid from "@mui/material/Grid";
+import Autocomplete from "@mui/material/Autocomplete";
 
 class Customer extends Component {
     constructor(props) {
@@ -25,6 +29,12 @@ class Customer extends Component {
                     </Tabs>
                 </div>
                 <div className={classes.form__container}>
+                    <Typography variant="h4" >
+                        Customer Manage
+                    </Typography>
+
+
+
 
                 </div>
                 <div className={classes.bottom__container}>

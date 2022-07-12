@@ -5,6 +5,8 @@ import { styleSheet } from './style';
 import {Link} from "react-router-dom";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
+import img from '../../assets/img2.jpg';
+
 
 class Dashboard extends Component {
     constructor(props) {
@@ -25,7 +27,7 @@ class Dashboard extends Component {
                     </Tabs>
                 </div>
                 <div className={classes.form__container}>
-
+                        <img src={img} alt="" />
                 </div>
                 <div className={classes.bottom__container}>
                     <p style={{color: 'white' , bottom:'7px'}}>Copyright © 2022-2029 WebCreation.com. All Right Reverved. </p>

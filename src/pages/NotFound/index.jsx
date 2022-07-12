@@ -3,6 +3,7 @@ import GDSEButton from '../../components/common/Button';
 import not_found from '../../assets/404.jpg';
 import { Link } from 'react-router-dom';
 import {withStyles} from "@mui/styles";
+import ErrorButton from "../../components/common/Button";
 
 
 
@@ -35,7 +36,7 @@ class Index extends Component {
                     <img src={not_found} alt="" />
                 </div>
                 <Link to="/">
-                    <GDSEButton
+                    <ErrorButton
                         variant="contained"
                         label="Back to home page"
                     />

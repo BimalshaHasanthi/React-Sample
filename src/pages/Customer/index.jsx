@@ -8,7 +8,15 @@ import Tab from "@mui/material/Tab";
 import ErrorButton from "../../components/common/Button";
 import TextField from "@mui/material/TextField";
 import Grid from "@mui/material/Grid";
-import Autocomplete from "@mui/material/Autocomplete";
+import TableContainer from "@mui/material/TableContainer";
+import TableHead from "@mui/material/TableHead";
+import Table from "@mui/material/Table";
+import TableRow from "@mui/material/TableRow";
+import TableBody from '@mui/material/TableBody';
+import TableCell, { tableCellClasses } from '@mui/material/TableCell';
+import Paper from "@mui/material/Paper";
+
+
 
 class Customer extends Component {
     constructor(props) {
@@ -29,12 +37,36 @@ class Customer extends Component {
                     </Tabs>
                 </div>
                 <div className={classes.form__container}>
-                    <Typography variant="h4"  >
-                        Customer Manage
+                    <div>
+                    <Typography variant="h4" style={{padding:'40px'}} >
+                        Manage Customer
                     </Typography>
+                        <Grid>
+                            <Grid item lg={6} md={6} sm={6} xm={6} style={{padding:'15px'}}>
+                                <TextField placeHolder="id" label="Customer Id" variant="outlined" size="small"
+                                           style={{width: '100%'}} />
+                            </Grid>
+                        </Grid>
+                    <Grid>
+                        <Grid item lg={6} md={6} sm={6} xm={6} style={{padding:'15px'}} >
+                            <TextField placeHolder="Name" label="Customer Name" variant="outlined" size="small"
+                                       style={{width: '100%'}} />
+                        </Grid>
+                    </Grid>
+                    <Grid>
+                        <Grid item lg={6} md={6} sm={6} xm={6} style={{padding:'15px'}}>
+                            <TextField placeHolder="address" label="Customer Address" variant="outlined" size="small"
+                                       style={{width: '100%'}} />
+                        </Grid>
+                    </Grid>
+                    <Grid>
+                        <Grid item lg={6} md={6} sm={6} xm={6} style={{padding:'15px'}}>
+                            <TextField placeHolder="salary" label="Customer Salary" variant="outlined" size="small"
+                                       style={{width: '100%'}} />
+                        </Grid>
+                    </Grid>
 
-
-
+                    </div>
 
                 </div>
                 <div className={classes.bottom__container}>

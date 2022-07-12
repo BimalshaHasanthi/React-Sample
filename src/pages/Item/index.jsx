@@ -5,6 +5,8 @@ import { styleSheet } from './style';
 import {Link} from "react-router-dom";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
+import Grid from "@mui/material/Grid";
+import TextField from "@mui/material/TextField";
 
 class Item extends Component {
     constructor(props) {
@@ -25,6 +27,35 @@ class Item extends Component {
                     </Tabs>
                 </div>
                 <div className={classes.form__container}>
+                    <div>
+                        <Typography variant="h4" style={{padding:'40px'}} >
+                            Manage Item
+                        </Typography>
+                        <Grid>
+                            <Grid item lg={6} md={6} sm={6} xm={6} style={{padding:'15px'}} >
+                                <TextField placeHolder="itemCode" label="Item Code" variant="outlined" size="small"
+                                           style={{width: '100%'}} />
+                            </Grid>
+                        </Grid>
+                        <Grid>
+                            <Grid item lg={6} md={6} sm={6} xm={6} style={{padding:'15px'}}>
+                                <TextField placeHolder="name" label="Item Name" variant="outlined" size="small"
+                                           style={{width: '100%'}} />
+                            </Grid>
+                        </Grid>
+                        <Grid>
+                            <Grid item lg={6} md={6} sm={6} xm={6} style={{padding:'15px'}}>
+                                <TextField placeHolder="unitPrice" label="Unit price" variant="outlined" size="small"
+                                           style={{width: '100%'}} />
+                            </Grid>
+                        </Grid>
+                        <Grid>
+                            <Grid item lg={6} md={6} sm={6} xm={6} style={{padding:'15px'}}>
+                                <TextField placeHolder="qty" label="Qty On Hand" variant="outlined" size="small"
+                                           style={{width: '100%'}} />
+                            </Grid>
+                        </Grid>
+                    </div>
 
                 </div>
                 <div className={classes.bottom__container}>

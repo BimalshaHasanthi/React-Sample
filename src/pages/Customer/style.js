@@ -40,4 +40,5 @@ export const styleSheet = {
         alignItems: 'center',
         justifyContent: 'center',
     }
+
 }
